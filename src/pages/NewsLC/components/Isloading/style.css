@@ -1,0 +1,46 @@
+.loader {
+  position: absolute;
+  margin: 75px auto;
+  width: 150px;
+  height: 150px;
+  display: block;
+  overflow: hidden;
+  align-items: center;
+  left: 45%;
+  top: 20%;
+}
+
+.loader div {
+  height: 100%;
+}
+
+/* loader 1 */
+.loader1,
+.loader1 div {
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px solid transparent;
+  -webkit-animation: rotate1076 linear 3.5s infinite;
+  animation: rotate1076 linear 3.5s infinite;
+  border-top-color: rgba(0, 0, 0, 0.5);
+  border-bottom-color: rgba(0, 0, 255, 0.5);
+}
+
+.loader,
+.loader * {
+  will-change: transform;
+}
+
+@keyframes rotate1076 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
